@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Calendar</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="calendar">
-            <div class="left">
-                <p id="date">01</p>
-                <p id="day">Sunday</p>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <h1 id="current-year"></h1>
+        </div>
+        <div class="calendar-body">
+            <div class="month-container">
+                <h2 id="current-month"></h2>
             </div>
-            <div class="right">
-                <p id="month">January</p>
-                <p id="year">2024</p>
+            <div class="day-container">
+                <span id="current-day"></span>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
